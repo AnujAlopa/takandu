@@ -1,0 +1,32 @@
+{
+  "name": "takandu",
+  "version": "1.0.0",
+  "description": "This repository contains server and portal code.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "TZ=UTC nodemon --ignore index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:apply": "prettier --write  '**/*.{js,jsx,json}'",
+    "format:check": "prettier --check  '**/*.{js,jsx,json}'"
+  },
+  "author": "anujverma",
+  "license": "",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@hapi/joi-date": "^2.0.1",
+    "async-middleware": "~1.2.1",
+    "cookie-parser": "^1.4.6",
+    "express": "~4.17.1",
+    "http-status-codes": "~2.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "swagger-jsdoc": "~3.4.0",
+    "swagger-ui-express": "^4.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier": "~2.8.4"
+  }
+}
